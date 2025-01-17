@@ -1,55 +1,85 @@
-header {
-    background-color: #b8174c;
-    color: white;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 20px;
-    font-size: large;
+:root {
+  --primary-color: #b8174c;
+  --secondary-color: #19a187;
 
+  --neutral-100: #f0f0f0;
+  --neutral-60: #666666;
+
+  --error-color: var(--primary-color);
+
+  --standard-border: solid 3px var(--primary-color);
+}
+
+header {
+  --header-height: 80px;
+  background-color: var(--primary-color);
+  color: var(--neutral-100);
+  height: var(--header-height);
+  line-height: var(--header-height);
+  padding-left: 20px;
+  font-size: large;
 }
 
 .navbar {
-    background-color: #19a189;
-    color: #f0f0f0;
-    height: 25px;
-    line-height: 25px;
-    padding-left: 20px;
+  background-color: var(--secondary-color);
+  color: var(--neutral-100);
+  height: 25px;
+  line-height: 25px;
+  padding-left: 20px;
 }
 
 .navbar a,
-.nacbar a:link,
+.navbar a:link,
 .navbar a:visited,
 .navbar a:hover,
-.navbar a:active
+.navbar a:active,
 .navbar a:focus {
-    color: #f0f0f0;
+  color: var(--neutral-100);
 }
-
-
 
 .main {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
 }
-
 
 .tabla {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
-.tabla .numero {
-    text-align: right;
+.tabla .numero,
+.tabla .acciones {
+  text-align: right;
 }
 
 .tabla .lista-vacia {
-    text-align: center;
-    padding: 25px;
-    color: #666666;
+  text-align: center;
+  padding: 25px;
+  color: var(--neutral-60);
+}
+
+.tabla .error {
+  color: var(--error-color);
+  font-size: small;
+  margin: 0 0 10px 0;
+  line-height: 1rem;
 }
 
 .footer {
-    padding: 20px;
-    border-top: solid 1px #b8174c;
+  padding: 20px;
+  border-top: var(--standard-border);
+}
+
+.acciones .mini-boton {
+  /* border: solid thin var(--primary-color); */
+  padding: 0 5px;
+  /* background-color: lightgray; */
+  color: var(--primary-color);
+}
+
+.acciones a.mini-boton:hover {
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
 }
