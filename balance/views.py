@@ -1,5 +1,7 @@
+from flask import render_template
+
 from . import app
 
 @app.route('/')
 def home():
-    return 'Hello, balance'
+    return render_template('inicio.html')

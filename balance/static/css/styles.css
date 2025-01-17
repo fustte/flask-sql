@@ -1,0 +1,55 @@
+header {
+    background-color: #b8174c;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: large;
+
+}
+
+.navbar {
+    background-color: #19a189;
+    color: #f0f0f0;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.navbar a,
+.nacbar a:link,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active
+.navbar a:focus {
+    color: #f0f0f0;
+}
+
+
+
+.main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.tabla {
+    width: 100%;
+    margin: 0;
+}
+
+.tabla .numero {
+    text-align: right;
+}
+
+.tabla .lista-vacia {
+    text-align: center;
+    padding: 25px;
+    color: #666666;
+}
+
+.footer {
+    padding: 20px;
+    border-top: solid 1px #b8174c;
+}
